@@ -30,7 +30,7 @@ interface down much
 
 %description -l pl
 Junkie jest stabilnym klientem FTP (GTK2) dla systemu X Window.
-Cechuje siê miêdzy innymi kolejkowaniem plików, ¶ciaganiem/wysy³aniem
+Cechuje siê miêdzy innymi kolejkowaniem plików, ¶ci±ganiem/wysy³aniem
 ca³ych katalogów, cache'owaniem katalogów, wykorzystaniem mechanizmu
 "Przeci±gnij i upu¶æ" (drag and drop), mened¿erem zapamiêtanych
 adresów, mo¿liwo¶ci± konfiguracji. Junkie korzysta z w³asnej
