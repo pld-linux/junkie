@@ -1,6 +1,6 @@
 # Bcond:
 #  - _without_ipv6 - don't build with IPv6 support
-#  - _without_fun  - disable fun 
+#  - _without_fun  - disable fun
 Summary:	GTK2-based FTP Client
 Summary(pl):	Klient FTP (GTK2)
 Name:		junkie
@@ -10,6 +10,8 @@ License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/%{name}/%{name}%{version}.tar.gz
 URL:		http://www.sourceforge.net/projects/%{name}/
+BuildRequires:	pkg-config
+BuildRequires:	glib2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
