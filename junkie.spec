@@ -12,7 +12,7 @@ License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/%{name}/%{name}%{version}.tar.gz
 # Source0-md5:	7cc23dbe9135775bde0299c1759aa812
-URL:		http://www.sourceforge.net/projects/%{name}/
+URL:		http://www.sourceforge.net/projects/junkie/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
