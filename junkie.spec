@@ -1,6 +1,8 @@
-# Bcond:
-#  - _without_ipv6 - don't build with IPv6 support
-#  - _without_fun  - disable fun
+#
+# Conditional build:
+# _without_ipv6		- don't build with IPv6 support
+# _without_fun		- disable fun
+#
 Summary:	GTK2-based FTP Client
 Summary(pl):	Klient FTP (GTK2)
 Name:		junkie
@@ -10,12 +12,15 @@ License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/%{name}/%{name}%{version}.tar.gz
 URL:		http://www.sourceforge.net/projects/%{name}/
-BuildRequires:	pkg-config
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Junkie is a stable GTK2 FTP client for the X Windows system. It has
+Junkie is a stable GTK2 FTP client for the X Window System. It has
 features such as queueing files, download/uploading of whole
 directories, caching of directories, drag and drop, a site manager,
 preferences (and a configure library), and an event-based FTP library,
@@ -23,12 +28,13 @@ which means that the client should be stable and not slow the user
 interface down much
 
 %description -l pl
-Junkie jest stabilnym klientem FTP (GTK2) dla systemu X windows.
+Junkie jest stabilnym klientem FTP (GTK2) dla systemu X Window.
 Cechuje siê miêdzy innymi kolejkowaniem plików, ¶ciaganiem/wysy³aniem
-ca³ych katalogów, cache'owaniem katalogów, "Przeci±gnij i upu¶æ" (drag
-and drop), mened¿er zapamiêtanych adresów, mo¿liwo¶æ konfiguracji.
-Junkie korzysta z w³asnej biblioteki, dziêki czemu nie powinien
-zbytnio spowalniaæ interfejsu u¿ytkownika.
+ca³ych katalogów, cache'owaniem katalogów, wykorzystaniem mechanizmu
+"Przeci±gnij i upu¶æ" (drag and drop), mened¿erem zapamiêtanych
+adresów, mo¿liwo¶ci± konfiguracji. Junkie korzysta z w³asnej
+biblioteki, dziêki czemu nie powinien zbytnio spowalniaæ interfejsu
+u¿ytkownika.
 
 %prep
 %setup -q -n %{name}%{version}
