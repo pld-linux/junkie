@@ -1,7 +1,7 @@
 #
 # Conditional build:
-# _without_ipv6		- don't build with IPv6 support
-# _without_fun		- disable fun
+%bcond_without ipv6		# don't build with IPv6 support
+%bcond_without fun		# disable fun
 #
 Summary:	GTK2-based FTP Client
 Summary(pl):	Klient FTP (GTK2)
@@ -10,7 +10,7 @@ Version:	0.3.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://dl.sourceforge.net/%{name}/%{name}%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/junkie/%{name}%{version}.tar.gz
 # Source0-md5:	7cc23dbe9135775bde0299c1759aa812
 URL:		http://www.sourceforge.net/projects/junkie/
 BuildRequires:	autoconf
@@ -48,15 +48,16 @@ rm -f missing
 %{__autoheader}
 %{__automake}
 %configure \
-	%{!?_without_ipv6:--enable-ipv6} \
-	%{?_without_fun:--disable-fun}
+	%{?with_ipv6:--enable-ipv6} \
+	%{!?with_fun:--disable-fun}
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
