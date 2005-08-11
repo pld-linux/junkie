@@ -1,7 +1,7 @@
 #
 # Conditional build:
-%bcond_without ipv6		# don't build with IPv6 support
-%bcond_without fun		# disable fun
+%bcond_without	ipv6		# don't build with IPv6 support
+%bcond_without	fun		# disable fun
 #
 Summary:	GTK2-based FTP Client
 Summary(pl):	Klient FTP (GTK2)
