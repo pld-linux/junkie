@@ -4,7 +4,7 @@
 %bcond_without	fun		# disable fun
 #
 Summary:	GTK2-based FTP Client
-Summary(pl):	Klient FTP (GTK2)
+Summary(pl.UTF-8):   Klient FTP (GTK2)
 Name:		junkie
 Version:	0.3.1
 Release:	1
@@ -28,14 +28,14 @@ preferences (and a configure library), and an event-based FTP library,
 which means that the client should be stable and not slow the user
 interface down much
 
-%description -l pl
+%description -l pl.UTF-8
 Junkie jest stabilnym klientem FTP (GTK2) dla systemu X Window.
-Cechuje siê miêdzy innymi kolejkowaniem plików, ¶ci±ganiem/wysy³aniem
-ca³ych katalogów, cache'owaniem katalogów, wykorzystaniem mechanizmu
-"Przeci±gnij i upu¶æ" (drag and drop), mened¿erem zapamiêtanych
-adresów, mo¿liwo¶ci± konfiguracji. Junkie korzysta z w³asnej
-biblioteki, dziêki czemu nie powinien zbytnio spowalniaæ interfejsu
-u¿ytkownika.
+Cechuje siÄ™ miÄ™dzy innymi kolejkowaniem plikÃ³w, Å›ciÄ…ganiem/wysyÅ‚aniem
+caÅ‚ych katalogÃ³w, cache'owaniem katalogÃ³w, wykorzystaniem mechanizmu
+"PrzeciÄ…gnij i upuÅ›Ä‡" (drag and drop), menedÅ¼erem zapamiÄ™tanych
+adresÃ³w, moÅ¼liwoÅ›ciÄ… konfiguracji. Junkie korzysta z wÅ‚asnej
+biblioteki, dziÄ™ki czemu nie powinien zbytnio spowalniaÄ‡ interfejsu
+uÅ¼ytkownika.
 
 %prep
 %setup -q -n %{name}%{version}
