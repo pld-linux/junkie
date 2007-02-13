@@ -4,7 +4,7 @@
 %bcond_without	fun		# disable fun
 #
 Summary:	GTK2-based FTP Client
-Summary(pl.UTF-8):   Klient FTP (GTK2)
+Summary(pl.UTF-8):	Klient FTP (GTK2)
 Name:		junkie
 Version:	0.3.1
 Release:	1
