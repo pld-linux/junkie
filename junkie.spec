@@ -15,7 +15,7 @@ Source0:	http://dl.sourceforge.net/junkie/%{name}%{version}.tar.gz
 URL:		http://www.sourceforge.net/projects/junkie/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
